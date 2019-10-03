@@ -1,1 +1,3 @@
-Swift-Special-String
+# SpecialString
+
+A description of this package.
