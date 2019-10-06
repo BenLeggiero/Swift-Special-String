@@ -3,7 +3,7 @@
 
 /// A string which has a special purpose, such as being an identifier, a notification name, a URL, or something else
 /// which is basically a string, but giving it type information is important andor useful
-public struct SpecialString<SpecialType> {
+public struct SpecialString<SpecialType: SpecialStringSpecialType> {
     /// The actual string value of the specialized string
     fileprivate var stringValue: String
 }
@@ -38,4 +38,11 @@ extension SpecialString: EssentiallyAString {
     public init(rawValue: String) {
         self.stringValue = rawValue
     }
+}
+
+
+
+/// A marker protocol to which all special string special types conform
+public protocol SpecialStringSpecialType {
+    // Empty on-purpose; Marker protocol
 }
