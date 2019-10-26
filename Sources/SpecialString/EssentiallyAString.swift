@@ -14,7 +14,8 @@ public protocol EssentiallyAString:
     RawRepresentable,
     ExpressibleByStringLiteral,
     LosslessStringConvertible,
-    Hashable
+    Hashable,
+    Codable
 where
     RawValue == String,
     StringLiteralType == String
