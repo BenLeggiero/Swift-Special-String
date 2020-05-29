@@ -20,6 +20,8 @@ where
     RawValue == String,
     StringLiteralType == String
 {
+    var rawValue: String { get set }
+    
     init(rawValue: String)
 }
 
@@ -51,7 +53,7 @@ public extension EssentiallyAString {
 // MARK: - Hashable
 
 public extension EssentiallyAString {
-    public func hash(into hasher: inout Hasher) {
+    func hash(into hasher: inout Hasher) {
         rawValue.hash(into: &hasher)
     }
 }
