@@ -42,7 +42,7 @@ If you got this:
 
 
 1: DECLARATION OF COPYRIGHT
-   This Product is copyright Ben Leggiero (c) 2019 BH-1-PS
+   This Product is copyright Ben Leggiero (c) 2020 BH-1-PS
 
    Ben Leggiero may be reached at BenLeggiero@Gmail.com
 
