@@ -12,8 +12,14 @@ let package = Package(
             name: "SpecialString",
             targets: ["SpecialString"]),
         
+        // DEPRECATED: Does not play nice with App Store requirements
         .library(
             name: "SpecialString_dynamic",
+            type: .dynamic,
+            targets: ["SpecialString"]),
+        
+        .library(
+            name: "SpecialStringDynamic",
             type: .dynamic,
             targets: ["SpecialString"]),
     ],
