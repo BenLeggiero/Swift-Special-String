@@ -51,7 +51,7 @@ public extension EssentiallyAString {
 // MARK: - Hashable
 
 public extension EssentiallyAString {
-    public func hash(into hasher: inout Hasher) {
+    func hash(into hasher: inout Hasher) {
         rawValue.hash(into: &hasher)
     }
 }

@@ -46,3 +46,13 @@ extension SpecialString: EssentiallyAString {
 public protocol SpecialStringSpecialType {
     // Empty on-purpose; Marker protocol
 }
+
+
+
+// MARK: - Passthrough conformance
+
+// MARK: Concurrency
+
+#if swift(>=5.5)
+extension SpecialString: Sendable where SpecialType: Sendable {}
+#endif
